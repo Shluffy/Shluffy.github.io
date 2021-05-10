@@ -1,0 +1,17 @@
+body { background-color: black ; color: white;}
+body a {color: blue;}
+body a:hover {color: red;}
+
+
+ul { list-style-type: none; 
+            margin: 0; 
+            padding: 0; 
+            overflow: hidden; 
+            background-color: #1b5bc2; } 
+        li { float: left; } 
+   li a { display: block; 
+            color: black; 
+            text-align: center; 
+            padding: 16px; 
+            text-decoration: none; } 
+   li a:hover { background-color: DodgerBlue ; color: black; }
