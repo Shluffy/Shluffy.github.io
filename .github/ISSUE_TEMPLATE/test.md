@@ -1,7 +1,7 @@
 ---
 name: Feature request
 about: Suggest an idea for this site
-title: 'Feature Request: '
+title: 'Test: '
 labels: 'enhancement, bug'
 assignees: 'Shluffy'
 
