@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+  	 <title>Scratch - Rickrolling-in-advance-ways</title>
+	 
+    <head> 
+        <link rel = "stylesheet" type="text/css" href="stylesheet.css"> 
+    </head>
+    
+    <div id=hiddentext>
+      
+     
+    
+    </div>
+  
+  <button onclick="message()">btnname</button>
+  
+  <script>
+    
+    //The value of the variable below is the message
+    var message1 = "You have found the secret message. This uses a random pick to decide which one you get, so click the button to hide this message and then click it again to get another message."
+        
+    //Or if you get lucky this will display a rickroll for you
+    var rickroll = '<iframe width="538" height="324" src="//www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1;"</iframe> <br> Click the button to hide this and then click it again to pssoibly get a different message.';
+    
+    //Variables for the different components of the function (one of these must be global and one is easier to have as a global variable
+    var m = document.getElementById("hiddentext");
+    var shown = false; 
+    var btnname = "Click Me to Reveal The Secret Message";
+    
+    //function to reveal message
+    
+    function message() {
+     
+      if (shown = false){
+        var message = Math.floor(Math.random()*2);
+        if (message = 1){
+        m.innerHTML = message1;
+        }
+        else if (message = 2){
+        
+        m.innerHTML = rickroll;
+          
+        }
+        shown true;
+        btnname = "Hide the message";
+        
+        }
+      
+      else if (shown = true){
+       
+        m.innerHTML = null;
+        shown = false;
+        
+      }
+      
+      
+    }
+    
+      </script>
+  
+</html>
