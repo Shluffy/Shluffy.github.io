@@ -33,22 +33,22 @@
     
     function message() {
      
-      if (shown = false){
+      if (shown == false){
         var message = Math.floor(Math.random()*2);
-        if (message = 1){
+        if (message == 1){
         m.innerHTML = message1;
         }
-        else if (message = 2){
+        else if (message == 2){
         
         m.innerHTML = rickroll;
           
         }
-        shown true;
+        shown = true;
         p.innerHTML = 'button onclick="message()">Hide the message</button>';
         
         }
       
-      else if (shown = true){
+      else if (shown == true){
        
         m.innerHTML = null;
         shown = false;
